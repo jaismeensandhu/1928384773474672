@@ -62,9 +62,11 @@ a{
 	text-decoration:none;
 	margin:1rem 1.5rem 0 0;
 }
+.modal{
+	left:10%;
+}
 .modal-dialog{
 	top:20px;
-	float:right;
 }
 .modal-content{
 	background-color: #bdc3c7;
@@ -338,6 +340,20 @@ a{
 	text-decoration:none
 }	
 
+/* ----------------------Index Crousal -------------------*/
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img 
+{
+				display: block;
+				height: 100%;
+				max-width: 100%;
+				line-height: 1;
+				width: 100%;
+				margin: 50px auto auto 0;
+}
+
+
 /* ---------------------- Banner text ------------------- */
 
 .text {
@@ -350,9 +366,8 @@ a{
   text-align: center;
   text-shadow: 1.2px 1.2px 0px #000000; 
 }
-.nav > li > a:hover {
+.page-scroll > a:hover {
       color: blue;
-      background-color: red;
  }
 
 .text h1{
@@ -368,15 +383,32 @@ a{
 	text-decoration:none
 }	
 /* --------------------------- Social Icons ------------------------ */
-.socialicons img{
+.socialicons div img{
 	height:30px;
 	width:30px;	
 	margin: 10px -12px 0 0;
-	padding: 0 0 0 0;
 }
-	
+.socialicons div img{
+	visibility:visible;
+} 
+.mainsi{
+	z-index: 90;
+}
+.hoversi{
+	z-index: 100;
+}
+.mainsi:hover div{
+	visibility: collapse;
+}
+.socialicons .hoversi div img{
+	visibility:hidden;
+}
+.socialicons .hoversi:hover div img{
+	visibility:visible;
+}
+
  .socialiconsfooter {
-	 z-index:100;
+	
 	position:relative;
     bottom:-10px;
 	right:-25px;
@@ -866,6 +898,11 @@ fieldset {
 	.socialicons img
 	{
 		margin: 10px 0px 0 0;
+	}
+	/* ----------------------Index Crousal -------------------*/
+
+	#banner .container {
+		/*height:40%;*/
 	}
 
 }

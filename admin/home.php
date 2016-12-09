@@ -30,13 +30,12 @@ else
 		</div><!-- end #header-wrapper -->
 		<div id="wrapper">
 			<div id="page">
-				<div id="page-bgtop">
-						<div id="content">
-							<div class="post">
+				<div id="page-bgtop col-sm-12 col-lg-12">
+						<div id="content col-sm-12 col-lg-12">
+							<div class="post col-sm-12 col-lg-12">
 								<h2 class="title"><center><font color ="red" ><b>Mentor Tech Source Job Portal</b></center></font></a></h2>
-								<p class="meta"></p>
 									<?php
-										include("includes/applicants.php");
+										include("applicants.php");
 									?>
 								<div class="entry"></div>
 							</div>

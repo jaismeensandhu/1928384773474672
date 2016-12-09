@@ -33,72 +33,11 @@
 		<meta property="og:url" content="http://www.mentortechsource.com/" />
 		<meta property="og:site_name" content="Mentor techSource Inc." />
 		
-		<style>
-			.carousel-inner > .item > img,
-			.carousel-inner > .item > a > img 
-			{
-				display: block;
-				height: 450px;
-				max-width: 100%;
-				line-height: 1;
-				width: 100%;
-				margin: 50px auto auto 0;
-			}
-			
-		</style>
 	</head>
 	<body>
 		<section id="banner">
 			<div class="wrapper">
-
-				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        				<div class="container">
-            					<div class="navbar-header page-scroll">
-                					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					                    	<span class="sr-only">Toggle navigation</span>
-					                    	<span class="icon-bar"></span>
-					                    	<span class="icon-bar"></span>
-					                    	<span class="icon-bar"></span>
-                					</button>
-               						<a class="navbar-brand page-scroll" href="index.php"><img id="logo" src="images/mentor_tech_logo.png" alt="mentor_tech_source_logo"></a>
-            					</div>
-            					<!-- Collect the nav links, forms, and other content for toggling -->
-            					<div class="collapse navbar-collapse navbar-ex1-collapse" style="float:right;">
-                					<ul class="nav navbar-nav">
-					                	<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-				                	<li><a class="page-scroll active" style="color:blue;" href="index.php">Home</a></li>
-				    				<li><a class="page-scroll" href="aboutus.html">About Us</a></li>
-					    			<li><a class="page-scroll" href="services.html">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.html">Our Clients</a></li>
-							    	<li><a class="page-scroll" href="contactus.html">Locations</a></li>
-									<li><div class="page-scroll socialicons">
-											<a href="https://www.facebook.com/mentortechsource/" target="_blank"><img src="images/logo_facebook.png" alt="logo_facebook"></a>
-											<a href="https://www.linkedin.com/in/mentorrecruitment" target="_blank"><img src="images/logo_linkedin.png" alt="logo_linkedin"></a>
-											<a href="#" data-toggle="modal" data-target="#MTSContact"><img src="images/logo_call.png" alt="logo_call"></a>
-											<a href="index.php#request"><img src="images/logo_email.png" alt="logo_email"></a>
-										</div> <!-- /.socialicons -->
-									</li>
-								</ul>
-							</div>
-							<!-- /.navbar-collapse -->
-						</div>
-						<!-- /.container -->
-					</nav>
-					<!-- Modal -->
-					<div class="modal fade" id="MTSContact" role="dialog">
-						<div class="modal-dialog modal-sm">
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h3 class="modal-title">Call Us @</h3>
-								</div>
-								<div class="modal-body">
-									<h4>Office : +1 (905) 530-2280</h4>
-								</div>
-							</div>
-						</div>
-					</div>
+					<?php include_once("includes/hnav.php");?>
 					<div class="container" style="padding:0;">
   						<div id="myCarousel" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
@@ -106,6 +45,7 @@
 							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 							<li data-target="#myCarousel" data-slide-to="1"></li>
 							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
 							</ol>
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
@@ -124,28 +64,24 @@
 						<div class="item video-container">
 							<img src="images/banner/over_the_globe.jpg" alt="it_resource">
 							<div class="text" style="bottom:55%;">
-								<a href="aboutus.html"><h3 style="color:#000;text-shadow:none;">Imagine having your IT Staffing vacancies recruited for 24/7,</h3><h3 style="color:#000;text-shadow:none;">with Mentor that becomes a REALITY for your company</h3></a>
+								<a href="aboutus.php"><h3 style="color:#000;text-shadow:none;">Imagine having your IT Staffing vacancies recruited for 24/7,</h3><h3 style="color:#000;text-shadow:none;">with Mentor that becomes a REALITY for your company</h3></a>
 							</div>
 						</div>
 						
 						<div class="item video-container">
-							<img src="images/banner/bot.jpg" alt="global reach">
+							<img src="images/banner/digital_analytics.jpg" alt="digital analysitcs">
 							<div class="text" style="bottom:38%;right:10%;">
-								<a href="contactus.html"><h2>Serving Our Clients</h2><h2>High Tech IOT implementations</h2></a>
+								<a href="contactus.php"><h2>Digital Analytics</h2></a>
 							</div>
 						</div>
 					
+						<div class="item video-container">
+							<img src="images/banner/bot.jpg" alt="global reach">
+							<div class="text" style="bottom:38%;right:10%;">
+								<a href="contactus.php"><h2>Serving Our Clients</h2><h2>High Tech IOT implementations</h2></a>
+							</div>
 						</div>
-
-						<!-- Left and right controls
-						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-						</a> -->
+						</div>
 					</div>
 				</div>
 			</div><!-- /.wrapper -->
@@ -178,19 +114,19 @@
         		<div class="col-sm-4 divs" style="background-image: url('images/staff_augmentation.png');">
 					<h1>Staff Augmentation</h1>
 					<p>We provide resources with a proven track record of implementing the technology stack, your project is implementing</p>
-					<a href="services.html#it_staffing"><h1>LEARN MORE</h1></a>
+					<a href="services.php#it_staffing"><h1>LEARN MORE</h1></a>
 				</div>
 	
 	    		<div class="col-sm-4 divs" style="background-image: url('images/vms_msp.png');">
 					<h1>VMS/MSP</h1>
 			    	<p>An intuitive and flexible cloud-based platform, to help your organisation easily engage and manage their IT suppliers SOW and T & M based services </p>
-					<a href="services.html#vms_msp"><h1>LEARN MORE</h1></a>
+					<a href="services.php#vms_msp"><h1>LEARN MORE</h1></a>
 				</div>
 		
 				<div class="col-sm-4 divs" style="background-image: url('images/offsite_solutions.png');">
 					<h1>Digital Labs</h1>
 					<p>We help companies adopt a digital strategy, no matter where they are on the digital continuum</p>
-					<a href="services.html#digital_labs"><h1>LEARN MORE</h1></a>
+					<a href="services.php#digital_labs"><h1>LEARN MORE</h1></a>
 				</div>
 			
 		     	<div class="servicekm"> </div>
@@ -217,7 +153,7 @@
 				<img src="images/clients/canadiantire_logo.png" alt="canadiantire_logo">
 	    		</div>
         	</div>
-	    		<div class="servicekm"><center><h5>Know more about <a href="clients.html">Our Clients</a></h5></center></div>
+	    		<div class="servicekm"><center><h5>Know more about <a href="clients.php">Our Clients</a></h5></center></div>
 		</section><!-- /#clients -->
 	
 	<section id="contactus" >
@@ -231,7 +167,7 @@
 		
 		    	<div  class="col-sm-4" style="background-image:url('images/office_locations.png');">
 		        	<h2>Find Us</h2>
-					<p><br>We have offices across the globe. <br>Find Mentor tech&gt;source office near you.<br><br><a href="contactus.html">View our Offices and locations</a></p>
+					<p><br>We have offices across the globe. <br>Find Mentor tech&gt;source office near you.<br><br><a href="contactus.php">View our Offices and locations</a></p>
 			</div>
 			
 			<div  class="col-sm-4" id="contactUs" style="background-image:url('images/quick_query.jpg');float:right;">
@@ -282,14 +218,6 @@
 			
 		</section><!-- /#contactus -->
 		
-		<section id="footer">
-			<div class="row"><div class="col-sm-12">
-					<p>
-	    				<a href="index.php">Home </a>|<a href="aboutus.html"> About Us </a>|<a href="#"> Sitemap </a>|<a href="clients.html"> Partners </a>|<a href="services.html"> Services </a>|<a href="contactus.html"> Contact Us </a>
-					</p>
-					<p>&copy;2016 Mentor Tech Source</p>
-				</div>
-			</div>
-		</section>
+<!-- footer --><?php include_once("includes/footer.php"); ?>
 	</body>
 </html>

@@ -46,38 +46,19 @@
                 					<ul class="nav navbar-nav">
 					                	<!-- Hidden li included to remove active class from about link when scrolled up past about section
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
-				    				<li><a class="page-scroll" href="aboutus.html">About Us</a></li>
-					    			<li><a class="page-scroll" href="services.html">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.html">Our Clients</a></li>
-							    	<li><a class="page-scroll active" href="contactus.html">Locations</a></li>
-									<li><div class="page-scroll socialicons">
-											<a href="https://www.facebook.com/mentortechsource/" target="_blank"><img src="images/logo_facebook.png" alt="logo_facebook"></a>
-											<a href="https://www.linkedin.com/in/mentorrecruitment" target="_blank"><img src="images/logo_linkedin.png" alt="logo_linkedin"></a>
-											<a href="#" data-toggle="modal" data-target="#MTSContact"><img src="images/logo_call.png" alt="logo_call"></a>
-											<a href="index.php#request"><img src="images/logo_email.png" alt="logo_email"></a>
-										</div> <!-- /.socialicons -->
-									</li>
+				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
+					    			<li><a class="page-scroll" href="services.php">Services</a></li>
+						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+							    	<li><a class="page-scroll active" href="contactus.php">Locations</a></li>
+									<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
 							</div>
 							<!-- /.navbar-collapse -->
 						</div>
 						<!-- /.container -->
 					</nav>
-					<!-- Modal -->
-					<div class="modal fade" id="MTSContact" role="dialog">
-						<div class="modal-dialog modal-sm">
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h3 class="modal-title">Call Us @</h3>
-								</div>
-								<div class="modal-body">
-									<h4>Office : +1 (905) 530-2280</h4>
-								</div>
-							</div>
-						</div>
-					</div>
+					<!-- Modal Starts -->
+					<?php include_once("includes/modal.php"); ?>
 		            	<div class="video-container">
 		        		<video autoplay loop class="fillWidth">
 			        		<source src="videos/In-And-Out/MP4/Meeting-Room.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -94,66 +75,73 @@
 	    		<!-- /.Wrapper -->
 		</section>
 		<!-- /#banner -->
+		<!-- Modal -->
+		<div id="editarUsuario" class="modal fade" role="dialog">
+        	<div class="modal-dialog modal-lg">
+				<div class="modal-content" style="background-color:#fff;opacity: .9;">
+				</div>
+			</div>
+		</div><!-- Modal Ends -->
+
 		<section id="servicespg">
         		<div class="subnav"><center>
-	                	<a href="it_staffing.html">IT Staffing</a>
-				<a href="apply_jobs.html">Apply Jobs</a>
-				<a href="upload_resume.html">Upload Resume</a><center>
+	            	<a href="it_staffing.php">IT Staffing</a>
+					<a href="apply_jobs.php">Apply Jobs</a>
+					<a href="upload_resume.php">Upload Resume</a><center>
 	    		</div><!-- /.sub_nav sub navigation -->
 	    		<div>
 	    			<center><h1> Positions Available </h1></center>
 	    		</div>
-	    		<div>
+	    		
+				<div>
 					<table class = "table">
-<thead>
-    <tr>
-        <td><center><strong>Job Id</strong></center> </td>
-        <td><center><strong>Job Title</strong></center> </td>
-        <td><center><strong>Job Type</strong> </center></td>
-        <td><center><strong>Experience</strong> </center></td>
-        <td><center><strong>Apply</strong></center></td>
-    </tr>
-</thead>
-<tbody>
-<?php
-    include_once("dbconnection.php");
-    $query="SELECT * FROM jobs";
-    $results = mysqli_query($bd,$query);
-    $a = 0;
+					<thead>
+						<tr>
+							<td><center><strong>Title</strong></center> </td>
+							<td><center><strong>Job Type</strong> </center></td>
+							<td><center><strong>Location</strong></center> </td>
+							<td><center><strong>Experience</strong> </center></td>
+							<td><center><strong>Apply</strong></center></td>
+						</tr>
+					</thead>
+					<tbody>
+					<?php
+						include_once("dbconnection.php");
+						$query="SELECT * FROM jobs ORDER BY addition_date DESC";
+						$results = mysqli_query($bd,$query);
+						$a = 0;
 
-    while($row = mysqli_fetch_assoc($results)) {
-      $a++;
-      echo '<script type = "text/javascript">c++;</script>'
-    ?>
-        <tr>
-            <td><center><?php echo $row['jobId']?></center></td>
-            <td><center><?php echo $row['title']?></center></td>
-            <td><center><?php echo $row['jobtype']?></center></td>
-            <td><center><?php echo $row['experience']?></center></td>
-            
-            <td>
-			<?php
-			 print '<center><a href="apply_jobs.php?jobId='.$row['jobId'].'">Apply</a></center>';  
-			 ?>
-            </td>
-        </tr>
-    <?php
-    }
-    ?>
-    </tbody>
-    </table
-        		</div>
-
-		</section><!-- /#servicespg Services Page Section Closed-->
-
-		<section id="footer">
-			<div class="row"><div class="col-sm-12">
-				<p>
-	    				<a href="index.php">Home </a>|<a href="aboutus.html"> About Us </a>|<a href="sitemap.html"> Sitemap </a>|<a href="clients.html"> Partners </a>|<a href="services.html"> Services </a>|<a href="contactus.html"> Contact Us </a>
-				</p>
-				<p>&copy;2016 Mentor Tech Source</p>
-			</div></div>
-		</section>
+						while($row = mysqli_fetch_assoc($results)) {
+						$a++;
+						echo '<script type = "text/javascript">c++;</script>'
+						?>
+							<tr>
+								<td><center><a data-a="<?php echo $row['jobId'];?>" href='#editarUsuario' class='modalEditarUsuario' data-toggle='modal' title='Editar usuario'><?php echo $row['title']?></a></center></td>
+								<td><center><?php echo $row['jobtype']?></center></td>
+								<td><center><?php echo $row['location']?></center></td>
+								<td><center><?php echo $row['experience']?></center></td>
+								
+								<td>
+								<?php
+								print '<center><a href="apply_jobs.php?jobId='.$row['jobId'].'">Apply</a></center>';  
+								?>
+								</td>
+							</tr>
+						<?php
+						}
+						?>
+    				</tbody>
+    			</table>
+			</div>
+		</section><!-- #servicespg Services Page Section Closed-->	
+		<!-- footer --><?php include_once("includes/footer.php"); ?>
 	</body>
-
+	<script>
+    			$('.modalEditarUsuario').click(function(){
+					var ID=$(this).attr('data-a');
+					$.ajax({url:"jobmodal.php?ID="+ID,cache:false,success:function(result){
+					$(".modal-content").php(result);
+					}});
+    			});
+			</script>
 </html>

@@ -46,38 +46,19 @@
                 					<ul class="nav navbar-nav">
 					                	<!-- Hidden li included to remove active class from about link when scrolled up past about section
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
-				    				<li><a class="page-scroll" href="aboutus.html">About Us</a></li>
-					    			<li><a class="page-scroll" href="services.html">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.html">Our Clients</a></li>
-							    	<li><a class="page-scroll active" href="contactus.html">Locations</a></li>
-									<li><div class="page-scroll socialicons">
-											<a href="https://www.facebook.com/mentortechsource/" target="_blank"><img src="images/logo_facebook.png" alt="logo_facebook"></a>
-											<a href="https://www.linkedin.com/in/mentorrecruitment" target="_blank"><img src="images/logo_linkedin.png" alt="logo_linkedin"></a>
-											<a href="#" data-toggle="modal" data-target="#MTSContact"><img src="images/logo_call.png" alt="logo_call"></a>
-											<a href="index.php#request"><img src="images/logo_email.png" alt="logo_email"></a>
-										</div> <!-- /.socialicons -->
-									</li>
+				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
+					    			<li><a class="page-scroll" href="services.php">Services</a></li>
+						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+							    	<li><a class="page-scroll active" href="contactus.php">Locations</a></li>
+									<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
 							</div>
 							<!-- /.navbar-collapse -->
 						</div>
 						<!-- /.container -->
 					</nav>
-					<!-- Modal -->
-					<div class="modal fade" id="MTSContact" role="dialog">
-						<div class="modal-dialog modal-sm">
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h3 class="modal-title">Call Us @</h3>
-								</div>
-								<div class="modal-body">
-									<h4>Office : +1 (905) 530-2280</h4>
-								</div>
-							</div>
-						</div>
-					</div>
+					<!-- Modal Starts -->
+					<?php include_once("includes/modal.php"); ?>
 		            	<div class="video-container">
 		        		<video autoplay loop class="fillWidth">
 			        		<source src="videos/In-And-Out/MP4/Meeting-Room.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -96,9 +77,9 @@
 		<!-- /#banner -->
 		<section id="servicespg">
         		<div class="subnav"><center>
-	                	<a href="it_staffing.html">IT Staffing</a>
-				<a href="apply_jobs.html">Apply Jobs</a>
-				<a href="upload_resume.html">Upload Resume</a><center>
+	                	<a href="it_staffing.php">IT Staffing</a>
+				<a href="apply_jobs.php">Apply Jobs</a>
+				<a href="upload_resume.php">Upload Resume</a><center>
 	    		</div><!-- /.sub_nav sub navigation -->
 	    		<div>
 	    			<center><h1> Mentor Careers </h1></center>
@@ -109,15 +90,7 @@
         		</div>
 
 		</section><!-- /#servicespg Services Page Section Closed-->
-
-		<section id="footer">
-			<div class="row"><div class="col-sm-12">
-				<p>
-	    				<a href="index.php">Home </a>|<a href="aboutus.html"> About Us </a>|<a href="sitemap.html"> Sitemap </a>|<a href="clients.html"> Partners </a>|<a href="services.html"> Services </a>|<a href="contactus.html"> Contact Us </a>
-				</p>
-				<p>&copy;2016 Mentor Tech Source</p>
-			</div></div>
-		</section>
+		<!-- footer --><?php include_once("includes/footer.php"); ?>
 	</body>
 
 </html>
