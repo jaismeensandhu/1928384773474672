@@ -3,7 +3,7 @@
 		<h3 class="modal-title">Job Description</h3>
     </div>
     <div class="modal-body">
-    	<center><table class = "table" style="font-family:serif;font-size:1em;">
+    	<center><table class="table" style="font-size:1em;border:none;">
 			<?php
 				include_once("dbconnection.php");
 					//if (isset($_GET['applicationId'])){

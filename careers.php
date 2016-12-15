@@ -50,44 +50,70 @@
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
 						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
 							    	<li><a class="page-scroll active" href="contactus.php">Locations</a></li>
-									<li><?php include_once("includes/sicons.php"); ?></li>
+                                    <li><div class="page-scroll socialicons">
+											<a href="https://www.facebook.com/mentortechsource/" target="_blank">
+												<div class="mainsi"><img src="images/logo_facebook.png" alt="logo_facebook"></div>
+												<!--<div class="hoversi"><img src="images/logo_facebookh.png" alt="logo_facebook"></div> -->
+											</a>
+											<a href="https://www.linkedin.com/in/mentorrecruitment" target="_blank">
+												<div class="mainsi"><img src="images/logo_linkedin.png" alt="logo_linkedin"></div>
+												<!--<div class="hoversi"><img src="images/logo_linkedinh.png" alt="logo_linkedin"></div> -->
+											</a>
+											<a href="#" data-toggle="modal" data-target="#MTSContact">
+												<div class="mainsi"><img src="images/logo_call.png" alt="logo_call"></div>
+												<!--<div class="hoversi"><img src="images/logo_callh.png" alt="logo_call"></div> -->
+											</a>
+											<a href="index.php#request">
+												<div class="mainsi"><img class="mainsi" src="images/logo_email.png" alt="logo_email"></div>
+											<!--	<div class="hoversi"><img src="images/logo_emailh.png" alt="logo_email"></div> -->
+											</a>
+										</div> <!-- /.socialicons -->
+									</li>
 								</ul>
 							</div>
 							<!-- /.navbar-collapse -->
 						</div>
 						<!-- /.container -->
 					</nav>
-					<!-- Modal Starts -->
-					<?php include_once("includes/modal.php"); ?>
+                
+<!-- Modal Contact -->
+					<div class="modal fade" id="MTSContact" role="dialog">
+						<div class="modal-dialog modal-sm">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h3 class="modal-title">Call Us @</h3>
+								</div>
+								<div class="modal-body">
+									<h4>Office : +1 (905) 530-2280</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!-- / Modal Ends -->
+
 		            	<div class="video-container">
-		        		<video autoplay loop class="fillWidth">
-			        		<source src="videos/In-And-Out/MP4/Meeting-Room.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		        		    <video autoplay loop class="fillWidth">
+			        		    <source src="videos/In-And-Out/MP4/Meeting-Room.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
 		     	         		<source src="videos/In-And-Out/WEBM/Meeting-Room.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-				 	</video>
-				 	<!-- <img src="images/banner/apply_jobs_banner.jpg" alt="apply_jobs_banner"> -->
-				</div>
+				 	        </video>
+				 	        <!-- <img src="images/banner/apply_jobs_banner.jpg" alt="apply_jobs_banner"> -->
+				        </div>
 				<!-- /.video-container -->
                     		<div class="text">
-					    <h1>Apply for Jobs</h1><p></p>
-				</div>
+					            <h1>Apply for Jobs</h1><p></p>
+				            </div>
 				<!-- /.text Header Headings -->
 	    		</div>
 	    		<!-- /.Wrapper -->
 		</section>
 		<!-- /#banner -->
-		<!-- Modal -->
-		<div id="editarUsuario" class="modal fade" role="dialog">
-        	<div class="modal-dialog modal-lg">
-				<div class="modal-content" style="background-color:#fff;opacity: .9;">
-				</div>
-			</div>
-		</div><!-- Modal Ends -->
-
 		<section id="servicespg">
         		<div class="subnav"><center>
 	            	<a href="it_staffing.php">IT Staffing</a>
-					<a href="apply_jobs.php">Apply Jobs</a>
-					<a href="upload_resume.php">Upload Resume</a><center>
+					<a href="careers.php">Apply Jobs</a>
+					<a href="upload_resume.php">Upload Your Resume</a><center>
 	    		</div><!-- /.sub_nav sub navigation -->
 	    		<div>
 	    			<center><h1> Positions Available </h1></center>
@@ -123,7 +149,7 @@
 								
 								<td>
 								<?php
-								print '<center><a href="apply_jobs.php?jobId='.$row['jobId'].'">Apply</a></center>';  
+								print '<center><a href="apply_jobs.php?jobId='.$row['jobId'].'">Apply</a></center>';
 								?>
 								</td>
 							</tr>
@@ -132,16 +158,34 @@
 						?>
     				</tbody>
     			</table>
+				<center><p>Note: If you couldn't find the Job openings relevant to your job profile, don't worry! <a href="upload_resume.php">Submit your resume, Our HR will contact you.</p></center>
 			</div>
-		</section><!-- #servicespg Services Page Section Closed-->	
-		<!-- footer --><?php include_once("includes/footer.php"); ?>
+		</section>
+        <!-- #servicespg Services Page Section Closed-->
+        <div id="editarUsuario" class="modal fade modal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <section id="footer">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>
+						<a href="index.php">Home </a>|<a href="aboutus.php"> About Us </a>|<a href="sitemap.php"> Sitemap </a>|<a href="clients.php"> Partners </a>|<a href="services.php"> Services </a>|<a href="contactus.php"> Contact Us </a>
+					</p>
+					<p>&copy;2016 Mentor Tech Source</p>
+				</div>
+			</div>
+		</section>
 	</body>
-	<script>
-    			$('.modalEditarUsuario').click(function(){
-					var ID=$(this).attr('data-a');
-					$.ajax({url:"jobmodal.php?ID="+ID,cache:false,success:function(result){
-					$(".modal-content").php(result);
-					}});
-    			});
-			</script>
+		<script>
+    $('.modalEditarUsuario').click(function(){
+        var ID=$(this).attr('data-a');
+        $.ajax({url:"jobmodal.php?ID="+ID,cache:false,success:function(result){
+            $(".modal-content").html(result);
+        }});
+    });
+</script>
+	
 </html>

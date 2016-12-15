@@ -33,7 +33,7 @@ else
 				<div id="page-bgtop col-sm-12 col-lg-12">
 						<div id="content col-sm-12 col-lg-12">
 							<div class="post col-sm-12 col-lg-12">
-								<h2 class="title"><center><font color ="red" ><b>Mentor Tech Source Job Portal</b></center></font></a></h2>
+								<h2 class="title"><center><font><b>Mentor Tech Source Job Portal</b></center></font></a></h2>
 									<?php
 										include("applicants.php");
 									?>

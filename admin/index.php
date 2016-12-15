@@ -7,25 +7,24 @@
 <link href="style.css" rel="stylesheet" />
 </head>
 
-<body style="background-color:#050F7E;">
+<body>
 
-<div style="width:1048px; height:120px; font-size:44px; font-style:italic; color:#FFFFFF; margin:auto;">
+<div style="font-size:44px; color:#FFFFFF; margin:auto;vertical-align:middle;">
 <p style="margin-top:60px; " ><center><b>WELCOME to MENTOR Jobs</b>	</center>  </p> </div>
 
-<div style="width:1048px; height:500px; margin-top:0px; margin:auto;  ">
+<div style="margin-top:50px; ">
 	<center><form action="index.php" method="post" name="form">
-<table width="523" height="144" border="1" class="text" style="background-color:#gray; margin-top:100px;">
+<table border="1" class="text" margin-top:100px;">
   <tr>
-    <td width="158">Admin Name:</td>
-    <td width="349"><input type="text" name="name" id="name"  style=" margin-left:70px;"></td>
+    <td>Admin Name:</td>
+    <td width="350"><input type="text" name="name" id="name"  style=" margin-left:70px;"></td>
   </tr>
   <tr>
     <td> Admin Password:</td>
     <td><input type="password" name="password" id="password" style=" margin-left:70px;"/></td>
   </tr>
   <tr>
-
-    <td colspan="2"><input type="submit" name="submit" id="submit" value="submit" style=" margin-left:150px;background-color:#0033FF; width:70px;border-radius: 0px 10px 0px 10px;"/></td>
+    <td colspan="2"><center><input type="submit" name="submit" id="submit" value="submit" style=" margin:10px;background-color:#fff; width:70px;height:30px;border-radius: 0px 10px 0px 10px;"/></center></td>
   </tr>
 </table>
 </form>
