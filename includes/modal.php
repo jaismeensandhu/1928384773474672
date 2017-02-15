@@ -1,5 +1,5 @@
 <!-- Modal Contact -->
-					<div class="modal fade" id="MTSContact" role="dialog">
+					<div class="modal right fade" id="MTSContact" role="dialog">
 						<div class="modal-dialog modal-sm">
 							<!-- Modal content-->
 							<div class="modal-content">

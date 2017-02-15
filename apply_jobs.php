@@ -48,7 +48,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" style="color:blue;" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll active" href="contactus.php">Locations</a></li>
 									<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -59,17 +59,20 @@
 					</nav>
 					<!-- Modal Starts -->
 					<?php include_once("includes/modal.php"); ?>
-		            	<div class="video-container">
-		        		<video autoplay loop class="fillWidth">
-			        		<source src="videos/In-And-Out/MP4/Meeting-Room.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-		     	         		<source src="videos/In-And-Out/WEBM/Meeting-Room.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-				 	</video>
-				 	<!-- <img src="images/banner/apply_jobs_banner.jpg" alt="apply_jobs_banner"> -->
-				</div>
+		            <!-- / Modal Ends -->
+
+		        	<div class="video-container" style="position:relative;margin-top:100px;height:100px;">
+					    <center><h1>Apply for Jobs</h1></center>
+							<!-- <div class="text">
+				            </div> -->
+		        	<!--    <video autoplay loop class="fillWidth">
+			        	    <source src="videos/In-And-Out/MP4/Meeting-Room.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		     	       		<source src="videos/In-And-Out/WEBM/Meeting-Room.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+				 	    </video>-->
+				 	        <!-- <img src="images/banner/apply_jobs_banner.jpg" alt="apply_jobs_banner"> -->
+				    </div>
 				<!-- /.video-container -->
-                    		<div class="text">
-					    <h1>Apply for Jobs</h1><p></p>
-				</div>
+                    
 				<!-- /.text Header Headings -->
 	    		</div>
 	    		<!-- /.Wrapper -->
@@ -77,9 +80,8 @@
 		<!-- /#banner -->
 		<section id="servicespg">
         		<div class="subnav"><center>
-	                	<a href="it_staffing.php">IT Staffing</a>
-				<a href="apply_jobs.php">Apply Jobs</a>
-				<a href="upload_resume.php">Upload Resume</a><center>
+					<a href="careers.php">Mentor Jobs</a>
+					<a href="upload_resume.php" class="current">Upload Your Resume</a><center>
 	    		</div><!-- /.sub_nav sub navigation -->
 	    		<div>
 	    			<center><h1> Mentor Careers </h1></center>

@@ -48,7 +48,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" style="color:blue;" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll active" href="contactus.php">Locations</a></li>
 									<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -77,16 +77,15 @@
 		<!-- /#banner -->
 		<section id="servicespg">
         		<div class="subnav"><center>
-	            <a href="it_staffing.php">IT Staffing</a>
-				<a href="apply_jobs.php">Apply Jobs</a>
-				<a href="upload_resume.php">Upload Resume</a><center>
+	           		<a href="careers.php">Mentor Jobs</a>
+					<a href="upload_resume.php" class="current">Upload Your Resume</a><center>
 	    		</div><!-- /.sub_nav sub navigation -->
 	    		<div>
 	    			<center><h1> Mentor Careers </h1></center>
 	    		</div>
 	    		<div>
-				<form id="contact" action="apply_jobs_insert.php" method="post" enctype="multipart/form-data"><center>
-            <table class="jobsform">
+				<form id="contact" class="jobsform" action="apply_jobs_insert.php" method="post" enctype="multipart/form-data"><center>
+            <table>
              <?php
              $jobId = "0";
              ?>
@@ -123,7 +122,7 @@
                     <td><input type="text" name="experience" id="experience"/></td>
                 <tr>
                     <td>Cover Letter</td>
-                    <td><textarea name="coverLetter" id="coverLetter"></textarea></td>
+                    <td><textarea name="coverLetter" type="text" id="coverLetter"></textarea></td>
                 </tr>
                 <tr>
                     <td>Upload Resume</td>
@@ -131,7 +130,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <center><input type="submit" name="submit" value="Submit"/></center>
+                        <center><input type="submit" id="contact-submit" name="submit" value="Submit"/></center>
                     </td>
                 </tr>
             </table>

@@ -52,7 +52,7 @@
                     --><li><a class="page-scroll" href="index.php">Home</a></li>
 	    				  <li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 		    			  <li><a class="page-scroll active"  style="color:blue;" href="services.php">Services</a></li>
-			    		  <li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+			    		  <li><a class="page-scroll" href="careers.php">Careers</a></li>
 				    	  <li><a class="page-scroll" href="contactus.php">Locations</a></li>
 				    	  <li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -87,12 +87,12 @@
 		    <center><h2>Digital Labs</h2></center>
             <p>The Software Economy is growing at light speed and if you do not want to be left behind you need the right company to help you implement Mobile and IOT strategies to get your company's product and services to your customers in the most comprehensive and innovative ways possible.  Mentor can help you do this. Our SME Mobile experts can help you pick the right platforms with no allegiance to any ISV's.   We are currenting engaged in projects that test the limits of current hardware and software available today.</p>
         </div>
-		<div class="col-md-4 servicespgs" style="height:100%;padding-top:10%">
+		<div class="col-md-4 servicespgs digilabpa">
 			<center><h2>Our Partnering Approach</h2></center>
 			<p>We follow standard procedures to initiate services with our partners,which helps us to get maximum benefits. We understand the overall business needs and the environment completely before initiating the implementations. We use state-of-the-art tools and technologies to provide market's best solutions.  
 			</p>
 		</div>
-		<div class="col-md-8 servicespgs" style="height:100%"><img src="images/servicespg/partnering_approach.png" alt="digital_labs"></div>
+		<div class="col-md-8 servicespgs digilabpaimg"><img src="images/servicespg/partnering_approach.png" alt="digital_labs"></div>
 		<div class="col-md-12 servicespgs" style="height:auto;margin:2% auto 2% auto">
 			<center><h2>Our Development Center</h2></center>
 		</div>

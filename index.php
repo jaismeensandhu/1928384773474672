@@ -37,58 +37,62 @@
 	<body>
 		<section id="banner">
 			<div class="wrapper">
-					<?php include_once("includes/hnav.php");?>
-					<div class="container" style="padding:0;">
-  						<div id="myCarousel" class="carousel slide" data-ride="carousel">
-							<!-- Indicators -->
-							<ol class="carousel-indicators">
+				<?php include_once("includes/hnav.php");?>
+				<div class="container" style="padding:0;">
+  					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
 							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 							<li data-target="#myCarousel" data-slide-to="1"></li>
 							<li data-target="#myCarousel" data-slide-to="2"></li>
 							<li data-target="#myCarousel" data-slide-to="3"></li>
-							</ol>
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<div class="video-container">
-		                			<video autoplay loop class="fillWidth">
-			            				<source src="videos/In-And-Out/MP4/Working-it.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-		     	        		 		<source src="videos/In-And-Out/WEBM/Working-it.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-				        			</video>
-				        			<!-- <img src="images/banner/index_banner.jpg" alt="mentor_tech_source_banner"> -->
-			        			</div> <!-- /.video-container -->
-							<div class="text" style="bottom: 30%;">
-								<center><h1>Accessing The World's Top IT Talent</h1>
-								<p style="font-size:1.3em;width:85%;">A Global provider of innovative IT staffing solutions with a unique blend of service offerings ranging from domestic and international recruitment initiatives, recruitment outsourcing or the complete provision of a client mirrored development center completely staffed and managed by Mentor</p></center>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="video-container">
+									<video autoplay loop class="fillWidth">
+										<source src="videos/In-And-Out/MP4/Working-it.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+										<source src="videos/In-And-Out/WEBM/Working-it.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+									</video>
+									<!-- <img src="images/banner/index_banner.jpg" alt="mentor_tech_source_banner"> -->
+								</div> <!-- /.video-container -->
+								<div class="text" style="bottom: 30%;">
+									<center><h1>Accessing The World's Top IT Talent</h1>
+									<p style="font-size:1.3em;width:85%;">A Global provider of innovative IT staffing solutions with a unique blend of service offerings ranging from domestic and international recruitment initiatives, recruitment outsourcing or the complete provision of a client mirrored development center completely staffed and managed by Mentor</p></center>
+								</div>
 							</div>
-						</div>
-						<div class="item video-container">
-							<img src="images/banner/over_the_globe.jpg" alt="it_resource">
-							<div class="text" style="bottom:55%;">
-								<a href="aboutus.php"><h3 style="color:#000;text-shadow:none;">Imagine having your IT Staffing vacancies recruited for 24/7,</h3><h3 style="color:#000;text-shadow:none;">with Mentor that becomes a REALITY for your company</h3></a>
+							<div class="item">
+								<div class="video-container">
+									<img class="fillWidth" src="images/banner/over_the_globe.jpg" alt="it_resource">
+								</div>
+								<div class="text s3">
+									<a href="aboutus.php"><h3 style="color:#000;text-shadow:none;">Imagine having your IT Staffing vacancies recruited 24/7,</h3><h3 style="color:#000;text-shadow:none;">with Mentor that becomes a REALITY for your company</h3></a>
+								</div>
 							</div>
-						</div>
-						
-						<div class="item video-container">
-							<img src="images/banner/digital_analytics.jpg" alt="digital analysitcs">
-							<div class="text" style="bottom:38%;right:10%;">
-								<a href="contactus.php"><h2>Digital Analytics</h2></a>
+							<div class="item">
+								<div class="video-container">
+									<img class="fillWidth" src="images/banner/digital_analytics.jpeg" alt="digital analysitcs">
+								</div>
+								<div class="text s4">
+									<a href="aboutus.php"><h2>Digital Analytics</h2>
+									<p>Big Data and Business Intelligence <br>is an essential part of all businesses today,<br>Mentor can help you with such projects</p></a>
+								</div>
 							</div>
-						</div>
-					
-						<div class="item video-container">
-							<img src="images/banner/bot.jpg" alt="global reach">
-							<div class="text" style="bottom:38%;right:10%;">
-								<a href="contactus.php"><h2>Serving Our Clients</h2><h2>High Tech IOT implementations</h2></a>
+							<div class="item">
+								<div class="video-container">
+									<img class="fillWidth" src="images/banner/bot.jpg" alt="global reach">
+								</div>
+								<div class="text s5">
+									<a href="contactus.php"><h2>Serving Our Clients</h2><h2>High Tech IOT implementations</h2></a>
+								</div>
 							</div>
-						</div>
-						</div>
-					</div>
-				</div>
+						</div><!-- /.Crousel Inner -->
+					</div><!-- /.Crousel Slide -->
+				</div><!-- /.Container -->
 			</div><!-- /.wrapper -->
 		</section><!-- /#banner -->
 	
 		<section id="interact">
-			
 				<div class="col-sm-4 divER">
 					<h2> Employers<br> that need <br>Resources</h2>
 					<a href="index.php#request"><h1>Contact<br>Mentor Sales & Services</h1></a>
@@ -96,7 +100,7 @@
 			
 				<div class="col-sm-4 divIP">
 						<h2> IT Professionals<br>that need <br>Employment</h2>
-					<a href="#"><h1>Apply Now</h1></a>
+					<a href="careers.php"><h1>Apply Now</h1></a>
 					</div>
 				<div class="col-sm-4 divCS">
 					<h2> Companies <br> that need <br>Offsite Solutions</h2>
@@ -104,26 +108,25 @@
 				</div>
 			
 		</section> <!-- /#interact -->
-	
-		<section id="services">
+	<section id="services">
 			<center>
-				<div class="col-sm-12">
+				<div class="col-sm-12 col-xs-12">
 					<h1><b>Services We Offer</b></h1>
 				</div>
 			</center>
-        		<div class="col-sm-4 divs" style="background-image: url('images/staff_augmentation.png');">
+        		<div class="col-sm-12 col-xs-12 divs" style="background-image: url('images/staff_augmentation.png');">
 					<h1>Staff Augmentation</h1>
 					<p>We provide resources with a proven track record of implementing the technology stack, your project is implementing</p>
 					<a href="services.php#it_staffing"><h1>LEARN MORE</h1></a>
 				</div>
 	
-	    		<div class="col-sm-4 divs" style="background-image: url('images/vms_msp.png');">
+	    		<div class="col-sm-12 col-xs-12 divs" style="background-image: url('images/vms_msp.png');">
 					<h1>VMS/MSP</h1>
 			    	<p>An intuitive and flexible cloud-based platform, to help your organisation easily engage and manage their IT suppliers SOW and T & M based services </p>
 					<a href="services.php#vms_msp"><h1>LEARN MORE</h1></a>
 				</div>
 		
-				<div class="col-sm-4 divs" style="background-image: url('images/offsite_solutions.png');">
+				<div class="col-sm-12 col-xs-12 divs" style="background-image: url('images/offsite_solutions.png');">
 					<h1>Digital Labs</h1>
 					<p>We help companies adopt a digital strategy, no matter where they are on the digital continuum</p>
 					<a href="services.php#digital_labs"><h1>LEARN MORE</h1></a>
@@ -133,15 +136,11 @@
 		</section><!-- /#services -->
 	
 		<section id="clients">
-			<div class="row"> 
-	    		<div class="col-sm-12">
-		        	<h1><b>Meet Our Clients</b></h1>
-					<p> Mentor tech&gt;source work with many leading companies accross the globe.<br>Below are some of our many amazing clients we are proud to work with.</p>
-	    		</div>
+			<div class="col-sm-12 col-xs-12">
+				<h1><b>Meet Our Clients</b></h1>
+				<p> Mentor tech&gt;source work with many leading companies accross the globe.<br>Below are some of our many amazing clients we are proud to work with.</p>
 			</div>
-	
-        	<div class="row"> 
-	    		<div class="col-sm-12">
+			<div class="col-sm-12 col-xs-12">
 				<img src="images/clients/accenture_logo.png" alt="accenture_logo">
 				<img src="images/clients/ibm_logo.jpg" alt="ibm_logo">
 				<img src="images/clients/td_bank.gif" alt="td_logo">
@@ -151,25 +150,23 @@
 				<img src="images/clients/cibc_logo.png" alt="cibc_logo">
 				<img src="images/clients/zales_logo.png" alt="zales_logo">
 				<img src="images/clients/canadiantire_logo.png" alt="canadiantire_logo">
-	    		</div>
-        	</div>
-	    		<div class="servicekm"><center><h5>Know more about <a href="clients.php">Our Clients</a></h5></center></div>
+			</div>
+			<div class="servicekm"><center><h5>Know more about <a href="clients.php">Our Clients</a></h5></center></div>
 		</section><!-- /#clients -->
 	
+		
 	<section id="contactus" >
 			<header>
 					<center><h1><b>Connect with us</b></h1></center>
 			</header>
 			<div  class="col-sm-4" style="background-image:url('images/telephone_directory.png'); float:left;">
 			    <h2>Call Us</h2>
-				<p><br>We can provide the Talent and IT Services you need.<br>We are just an Email or phone call away.<br><br>Head Office : +1 (905) 530-2280<br><br><a href="mailto:MentorSales@Mentortechsource.com?Subject=Head+Office:" target="_blank">mentorsales@mentortechsource.com</a></p>
-		    	</div>
-		
-		    	<div  class="col-sm-4" style="background-image:url('images/office_locations.png');">
-		        	<h2>Find Us</h2>
-					<p><br>We have offices across the globe. <br>Find Mentor tech&gt;source office near you.<br><br><a href="contactus.php">View our Offices and locations</a></p>
+				<p><br>We can provide the Talent and IT Services you need.<br>We are just an Email or phone call away.<br><br>Head Office : +1 (905) 530-2280<br><br><a href="mailto:MentorSales@Mentortechsource.com?Subject=Head+Office:" target="_blank">MentorSales</br>@mentortechsource.com</a></p>
+		    </div>
+			<div  class="col-sm-4" style="background-image:url('images/office_locations.png');">
+		       	<h2>Find Us</h2>
+				<p><br>We have offices across the globe. <br>Find Mentor tech&gt;source office near you.<br><br><a href="contactus.php">View our Offices and locations</a></p>
 			</div>
-			
 			<div  class="col-sm-4" id="contactUs" style="background-image:url('images/quick_query.jpg');float:right;">
 			    <h2>Customer Request</h2>
 				<?php
@@ -177,8 +174,8 @@
 					if (isset($_POST['submit']))  
 					{
 						//Email information
-						$admin_email = "jaismeen.sandhu@yahoo.com";
-						$server_email = "jaismeen.sandhu@gmail.com";
+						$admin_email = "mentortechsource1@gmail.com";
+						$server_email = "MentorSales@Mentortechsource.com";
 						$uemail = $_REQUEST['email'];
 						$subject = $_REQUEST['title'];
 						$message = $_REQUEST['message'];
@@ -208,14 +205,14 @@
 						<input placeholder="Phone Number" name="contactNumber" type="tel" tabindex="4" required>
 					</fieldset>
 					<fieldset>
-						<textarea placeholder="Type your Message Here...." name="message" tabindex="5" required></textarea>
+						<textarea placeholder="Type your Message Here...." name="message" type="text" tabindex="5" required></textarea>
 					</fieldset>
 					<fieldset>
 						<button name="submit" type="submit" id="contact-submit" href="index.php" onclick="show_alert();">Submit</button>
 					</fieldset>
 				</form>
 		    </div>
-			
+		    
 		</section><!-- /#contactus -->
 		
 <!-- footer --><?php include_once("includes/footer.php"); ?>

@@ -1,5 +1,5 @@
-
-<meta http-equiv="content-type" content="text/html; charset=ut
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Mentor Tech Source</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />

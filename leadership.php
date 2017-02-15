@@ -57,7 +57,7 @@
                     --><li><a class="page-scroll" href="index.php">Home</a></li>
 	    				  <li><a class="page-scroll active" style="color:blue;" href="aboutus.php">About Us</a></li>
 		    			  <li><a class="page-scroll" href="services.php">Services</a></li>
-			    		  <li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+			    		  <li><a class="page-scroll" href="careers.php">Careers</a></li>
 				    	  <li><a class="page-scroll" href="contactus.php">Locations</a></li>
 				    	  <li><?php include_once("includes/sicons.php"); ?></li>
                 </ul>
@@ -84,48 +84,50 @@
 		    <center>
 	            <a href="aboutus.php">Who We Are</a>
 				<a class="current" href="leadership.php">Leadership</a>
-				<a href="#">Success Stories</a>
+                <a href="clients.php">Our Clients</a>
+				<a href="success_stories.php">Success Stories</a>
 			</center>
 	    </div>
 		<section id="leadershippg">
-		    <div class="col-sm-4 leadershipPanel" style="background-color:#000;height:100%;color:#fff;line-height:170%;font-size:1.25em;opacity: 0.4;filter: alpha(opacity=40);">
-			    <center><h1 style="opacity: 1.0;filter: alpha(opacity=100);">Our Leadership</h1></center>
-                 <p style="opacity: 1.0;filter: alpha(opacity=100);">Mentor Tech Source has a leadership group that have a combined 100 plus man years of experience in providing best practices and services in the provision of Staffing Solutions.  We have a very approachable corporate culture on purpose, if someone has a good idea or input on how to improve our delivery process, they will be heard. We also are never satisfied on the status quo, continual process improvement is our mantra and making sure that our customers get maximum value and effort from Mentor each and every time they engage our firm. These 4 key team members have outstanding leadership qualities and are always working with our Global Team to see Mentor’s vision becomes reality.  We live in a Global Village and it’s our job to ensure that no stone is left unturned to satisfy the Information Technology needs of our customers.</p>
-            </div>
-            <div class="col-sm-8 leadershipPanel" style="height:100%;padding:0 0 0 0;">
-                <div class="col-sm-6 divs leadershipIDs" id="divs" onmouseover="showGreyDiv('divsOl1');" style="background-image: url('images/ajit_someshwar.jpg');border-right:solid 10px #fff;">
-                    <div class="divsOl" id="divsOl1">
-                        <h1>Ajit Someshwar</h1>
-                        <p>Chief Executive Officer (CEO)</p>
-                        <p><b><a href="ajit_someshwar.php#profilepg">READ MORE</a></b></p>
-                    </div>
-                    <div class="leadershipTag"><h3>Cheif Executive Officer</h3></div>
-                </div>      
-                
-                <div class="col-sm-6 divs leadershipIDs" id="divs" onmouseover="showGreyDiv('divsOl2');" style="background-image: url('images/michael_groff.jpg');">
-                    <div class="divsOl" id="divsOl2">
-                        <h1>Michael Groff</h1>
-                        <p>Co-Founder & Chief Revenue Officer</p>
-                        <p><b><a href="michael_groff.php">READ MORE</a></b></p>
-                    </div>
-                    <div class="leadershipTag"><h3>Co-Founder & CRO</h3></div>
-                </div>                
-                <div class="col-sm-6 divs leadershipIDs" id="divs" onmouseover="showGreyDiv('divsOl3');" style="background-image: url('images/lee_groff.jpg');border-right:solid 10px #fff;">
-                    <div class="divsOl" id="divsOl3">
-                        <h1>Lee Groff</h1>
-                        <p>Chief Operating Officer</p>
-                        <p><b><a href="lee_groff.php">READ MORE</a></b></p>
-                    </div>
-                    <div class="leadershipTag"><h3>Chief Operating Officer</h3></div>
+            <div>
+                 <div class='col-xs-12 col-sm-12 col-md-6 col-lg-6 card'>
+                    <h1>
+                        Ajit Someshwar
+                    </h1>
+                    <img src='images/ajit_someshwar.jpg'>
+                    <p class='bio'>
+                        <h4>Chief Executive Officer (CEO)</h4><br>Ajit is an Indo-Canadian entrepreneur, philanthropist and social activist based in Toronto, Canada. He is President and CEO of Mentor. He has a large portfolio of investment investments in dozens of companies from Realestate to Information Technology. <a href="ajit_someshwar.php">read more ..</a>
+                    </p>
                 </div>
 
-                <div class="col-sm-6 divs leadershipIDs" id="divs" onmouseover="showGreyDiv('divsOl4');" style="background-image: url('images/mahesh_chandrasekar.jpg');">
-                    <div class="divsOl" id="divsOl4">
-                        <h1>Mahesh Chandrasekar</h1>
-                        <p>Head of Global Recruitment</p>
-                        <p><b><a href="mahesh_chandrasekar.php">READ MORE</a></b></p>
-                    </div>
-                    <div class="leadershipTag"><h3>Global Recruitment Head</h3></div>
+                <div class='col-xs-12 col-sm-12 col-md-6 col-lg-6 card'>
+                    <h1>
+                        Michael Groff
+                    </h1>
+                    <img src='images/michael_groff.jpg' alt="michael_groff">
+                    <p class='bio'>
+                        <h4>Co-Founder & Chief Revenue Officer</h4><br>Michael is one of the founders of Mentor started this firm 10 years ago. He has overseen and built the company from two man start-up to a medium sized Staffing and IT solutions firm with over 500 personnel on assignments with clientele in three continents. <a href="michael_groff.php">read more..</a>
+                    </p>
+                </div>
+                
+                <div class='col-xs-12 col-sm-12 col-md-6 col-lg-6 card'>
+                    <h1>
+                        Lee Groff
+                    </h1>
+                    <img src='images/lee_groff.jpg' alt="lee_groff">
+                    <p class='bio'>
+                        <h4>Chief Operating Officer</h4><br>With over 25 years of experience in running both public companies Canadian Divisions and Private companies in the IT Staffing and Outsourcing business.  Lee brings a wealth of knowledge in operation process’s and streamlining IT Service Delivery,  he has hired IT talent from <a href="lee_groff.php">read more..</a>
+                    </p>
+                </div>
+                
+                <div class='col-xs-12 col-sm-12 col-md-6 col-lg-6 card'>
+                    <h1>
+                        Mahesh Chandrasekar
+                    </h1>
+                    <img src='images/mahesh_chandrasekar.jpg' alt="mahesh_chandrasekar">
+                    <p class='bio'>
+                        <h4>Head of Global Recruitment</h4><br>Mahesh Chandrasekar is the Head of Global Recruitment at Mentortech. He brings over 17 years of experience in the field of Talent Acquisition. Mahesh also frequently interfaces with the customers to understand their resource needs and have them addressed by the teams he manages out of our US <a href="mahesh_chandrasekar.php">read more..</a>
+                    </p>
                 </div>
             </div>
         </section>

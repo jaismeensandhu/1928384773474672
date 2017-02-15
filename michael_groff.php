@@ -48,7 +48,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll active" style="color:blue;" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 							    	<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -76,15 +76,16 @@
 			<div class="subnav">
 				<center>
 					<a href="aboutus.php#WhoWeAre">Who We Are</a>
-					<a href="leadership.php">Leadership</a>
-					<a href="#">Success Stories</a>
+					<a class="current" href="leadership.php">Leadership</a>
+					<a href="clients.php">Our Clients</a>
+					<a href="success_stories.php">Success Stories</a>
 				<center>
 			</div>
 			<div id="profilepg" class="profiles">
-				<div class="col-md-4 servicespgs"><img src="images/michael_groff.jpg" alt="Michael Groff"></div>
-				<div class="col-md-8 servicespgs">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 leaderimg"><img src="images/michael_groff.jpg" alt="Michael Groff"></div>
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 leaderp">
 					<center><h2>Michael Groff</h2></center>
-					<h4>Co-Founder & Chief Revenue Officer</h4></center>
+					<center><h4>Co-Founder & Chief Revenue Officer</h4></center>
 					<p style="text-align:left;">Michael is one of the founders of Mentor started this firm 10 years ago. He has overseen and built the company from two man start-up to a medium sized Staffing and IT solutions firm with over 500 personnel on assignments with clientele in three continents. He is a positive person by nature with strong conviction anything can be accomplished with the right vision and the right amount of effort.</p>
 					<p style="text-align:left;">Michael owns and manages the major accounts for Mentor. Companies that are household names like Accenture, IBM, CIBC and Canadian Tire. He has intentionally left Mentor as a specialty service provider with a vision to be the best at finding hard to get skills globally and offer implementation solutions wrapped around that mantra. Also being insists on Mentor being ahead of the curve in the Digital World we are all part of. His view is that all companies are now software companies, they must be in order to be a part of the new and emerging digital economy.</p>
         		</div>

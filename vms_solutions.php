@@ -51,7 +51,7 @@
 							<li><a class="page-scroll" href="index.php">Home</a></li>
 							<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 							<li><a class="page-scroll active" style="color:blue;" href="services.php">Services</a></li>
-							<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+							<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 							<li><?php include_once("includes/sicons.php"); ?></li>
 						</ul>
@@ -64,7 +64,7 @@
 				<img src="images/banner/services_vms_msp_banner.jpg" alt="mentor_tech_source_services_vms_msp" height="400px" width="100%" style="object-fit:fill;">
 			</div>
 			<div class="text">
-				<h1 style="color:#fff;margin-bottom:.5rem;padding-bottom:.5rem;">MSP VMS Solutions<br></h1><p  style="color:#fff;text-shadow: .2px .2px .5px #fff;font-size:1.5rem;"></p>
+				<h1 style="color:#fff;">MSP VMS Solutions<br></h1>
 			</div>
 		</div><!-- /.wrapper -->
 	</section>
@@ -84,8 +84,8 @@
             <p>Our VMS Technology is an intuitive and flexible web-based platform, that helps companies easily engage and manage their contract labour and consultants. By streamlining, standardizing, and automating the process, companies and organizations increase their visibility, control, and cost savings.</p><p>If your company wishes to take advantage of our VMS, but isn’t able to dedicate the staff needed to run the process – or simply doesn’t have the expertise – Our vendor-neutral MSP program allows you to continue to work with current suppliers while providing transparency, efficiency, and accountability.</p>
         </div>
         
-		<div class="col-md-12 servicespgs">
-			<p> Features: 
+		<div class="col-md-12 servicespgs12" style="height:auto;">
+			<p><b> Features:</b> 
 				<ul>
 					<li>Easy to use, cloud based</li>
 					<li>Categories for hourly (staffing) and deliverables-based (SOW) services</li>

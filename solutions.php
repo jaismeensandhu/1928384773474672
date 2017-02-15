@@ -48,7 +48,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll active" style="color:blue;" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 							    	<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>

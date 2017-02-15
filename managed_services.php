@@ -53,7 +53,7 @@
                     --><li><a class="page-scroll" href="index.php">Home</a></li>
 	    				  <li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 		    			  <li><a class="page-scroll active" style="color:blue;" href="services.php">Services</a></li>
-			    		  <li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+			    		  <li><a class="page-scroll" href="careers.php">Careers</a></li>
 				    	  <li><a class="page-scroll" href="contactus.php">Locations</a></li>
 				    	  <li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -83,11 +83,11 @@
 	    </div>
 	    
 	 
-        <div id="managed_services" class="col-md-6 servicespg">
+        <div id="managed_services" class="col-md-6 servicespgs">
 		    <center><h2></h2></center>
             <p>We realize that every client has a different set of contingent workforce goals. Mentor has built a comprehensive suite of a-la-carte solutions which allows us to help our clients better achieve those goals. In addition to providing a full Managed Service Program or MSP, Mentor provides additional services such as vendor sub-tiering, invoice consolidation and a proven VMS technology .<br>Utilizing our well- rounded expertise of the buyer, supplier and service provider community, we ensures that our clients realize their cost saving, transparency and efficiency goals.  To demonstrate our willingness to provide value to our customer we offer a free of charge contingent labour audit.</p>
         </div>
-        <div class="col-md-6 servicespg"><img src="images/servicespg/managed_services.jpg" alt="managed_services"></div>
+        <div class="col-md-6 servicespgs"><img src="images/servicespg/managed_services.jpg" alt="managed_services"></div>
 
         
 	</section>

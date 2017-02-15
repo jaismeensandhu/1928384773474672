@@ -49,8 +49,8 @@
             }
         }
     </script>
-        <form id="contact" action="apply_jobs_insert.php" method="post" enctype="multipart/form-data"><center>
-            <table class="jobsform">
+        <form id="contact" class="jobsform" action="apply_jobs_insert.php" method="post" enctype="multipart/form-data"><center>
+            <table>
              <?php
              if (isset($_GET['jobId'])){ 
              $jobId = $_GET['jobId'];
@@ -59,20 +59,20 @@
                     <td>Job ID</td>
                     <td>
                     <?php
-                    print '<input type="text" name="jobId" id="jobId" value="'.$jobId.'"/>'; 
+                    print '<input type="text" name="jobId" id="jobId" value="'.$jobId.'" readonly/>'; 
                     ?>
                     </td>
                 </tr><?php }?>
                 <tr>
-                    <td>Full Name</td>
+                    <td>Full Name*</td>
                     <td><input type="text" name="name" id="name"/></td>
                 </tr>
                 <tr>
-                    <td>Email ID</td>
+                    <td>Email ID*</td>
                     <td><input type="text" name="email" id="email" onClick="return chkmail();"/></td>
                 </tr>
                 <tr>
-                    <td>Contact Number</td>
+                    <td>Contact Number*</td>
                     <td><input type="text" name="contactNumber" id="contactNumber"/></td>
                 </tr>
                 </tr>
@@ -80,7 +80,7 @@
                     <td><input type="text" name="country" id="country"/></td>
                 </tr>
                 <tr>
-                    <td>Expected Salary</td>
+                    <td>Expected Salary/Rate</td>
                     <td><input type="text" name="expectedSalary" id="expectedSalary"/></td>
                 </tr>
                 <tr>
@@ -88,15 +88,15 @@
                     <td><input type="text" name="experience" id="experience"/></td>
                 <tr>
                     <td>Cover Letter</td>
-                    <td><textarea name="coverLetter" id="coverLetter"></textarea></td>
+                    <td><textarea name="coverLetter" type="text" id="coverLetter"></textarea></td>
                 </tr>
                 <tr>
-                    <td>Upload Resume</td>
+                    <td>Upload Resume*</td>
                     <td><input type="file" name="resume" id="resume"/></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <center><input type="submit" name="submit" value="Submit"/></center>
+                        <center><input type="submit" id="contact-submit" name="submit" value="Submit"/></center>
                     </td>
                 </tr>
             </table>

@@ -48,7 +48,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll active" style="color:blue;" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 							    	<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -76,11 +76,11 @@
 				<a href="managed_services.php">Managed Services</a><center>
 	    		</div>
         		
-        		<div id="mobile_engineering" class="col-md-6 servicespg">
+        		<div id="mobile_engineering" class="col-md-6 servicespgs">
 		    		<center><h2></h2></center>
             			<p>The Software Economy is growing at light speed and if you don’t want to be left behind you need the right company to help you implement Mobile and IOT strategies to get your company’s product and services to your customers in the most comprehensive and innovative ways possible.  Mentor can help you do this. Our SME Mobile experts can help you pick the right platforms with no allegiance to any ISV’s.   We are currenting engaged in projects that test the limits of current hardware and software available today. </p>
         		</div>
-        		<div class="col-md-6 servicespg"><img src="images/servicespg/mobile_engineering.png" alt="mentor_tech_source_services_mobile_engineering"></div>
+        		<div class="col-md-6 servicespgs"><img src="images/servicespg/mobile_engineering.png" alt="mentor_tech_source_services_mobile_engineering"></div>
 		</section>
 <!-- footer --><?php include_once("includes/footer.php"); ?>
 	</body>

@@ -48,27 +48,9 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
-							    	<li><a class="page-scroll active" href="contactus.php">Locations</a></li>
-                                    <li><div class="page-scroll socialicons">
-											<a href="https://www.facebook.com/mentortechsource/" target="_blank">
-												<div class="mainsi"><img src="images/logo_facebook.png" alt="logo_facebook"></div>
-												<!--<div class="hoversi"><img src="images/logo_facebookh.png" alt="logo_facebook"></div> -->
-											</a>
-											<a href="https://www.linkedin.com/in/mentorrecruitment" target="_blank">
-												<div class="mainsi"><img src="images/logo_linkedin.png" alt="logo_linkedin"></div>
-												<!--<div class="hoversi"><img src="images/logo_linkedinh.png" alt="logo_linkedin"></div> -->
-											</a>
-											<a href="#" data-toggle="modal" data-target="#MTSContact">
-												<div class="mainsi"><img src="images/logo_call.png" alt="logo_call"></div>
-												<!--<div class="hoversi"><img src="images/logo_callh.png" alt="logo_call"></div> -->
-											</a>
-											<a href="index.php#request">
-												<div class="mainsi"><img class="mainsi" src="images/logo_email.png" alt="logo_email"></div>
-											<!--	<div class="hoversi"><img src="images/logo_emailh.png" alt="logo_email"></div> -->
-											</a>
-										</div> <!-- /.socialicons -->
-									</li>
+						    		<li><a class="page-scroll active" style="color:blue;" href="careers.php">Careers</a></li>
+							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
+                                    <li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
 							</div>
 							<!-- /.navbar-collapse -->
@@ -76,34 +58,22 @@
 						<!-- /.container -->
 					</nav>
                 
-<!-- Modal Contact -->
-					<div class="modal fade" id="MTSContact" role="dialog">
-						<div class="modal-dialog modal-sm">
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h3 class="modal-title">Call Us @</h3>
-								</div>
-								<div class="modal-body">
-									<h4>Office : +1 (905) 530-2280</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-			<!-- / Modal Ends -->
+					<!-- Modal Contact -->
+					<?php include_once("includes/modal.php"); ?>
+					<!-- / Modal Ends -->
 
-		            	<div class="video-container">
-		        		    <video autoplay loop class="fillWidth">
-			        		    <source src="videos/In-And-Out/MP4/Meeting-Room.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-		     	         		<source src="videos/In-And-Out/WEBM/Meeting-Room.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-				 	        </video>
+		        	<div class="video-container" style="position:relative;margin-top:100px;height:100px;">
+					    <center><h1>Apply for Jobs</h1></center>
+							<!-- <div class="text">
+				            </div> -->
+		        	<!--    <video autoplay loop class="fillWidth">
+			        	    <source src="videos/In-And-Out/MP4/Meeting-Room.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		     	       		<source src="videos/In-And-Out/WEBM/Meeting-Room.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+				 	    </video>-->
 				 	        <!-- <img src="images/banner/apply_jobs_banner.jpg" alt="apply_jobs_banner"> -->
-				        </div>
+				    </div>
 				<!-- /.video-container -->
-                    		<div class="text">
-					            <h1>Apply for Jobs</h1><p></p>
-				            </div>
+                    
 				<!-- /.text Header Headings -->
 	    		</div>
 	    		<!-- /.Wrapper -->
@@ -111,23 +81,22 @@
 		<!-- /#banner -->
 		<section id="servicespg">
         		<div class="subnav"><center>
-	            	<a href="it_staffing.php">IT Staffing</a>
-					<a href="careers.php">Apply Jobs</a>
+	            	<a href="careers.php" class="current">Mentor Jobs</a>
 					<a href="upload_resume.php">Upload Your Resume</a><center>
 	    		</div><!-- /.sub_nav sub navigation -->
 	    		<div>
-	    			<center><h1> Positions Available </h1></center>
+	    		<center><h1>  </h1></center>
 	    		</div>
-	    		
-				<div>
-					<table class = "table">
+				<input style="margin-left:1%;margin-right:1%;width:96%;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Jobs by Title, Location or Keywords " title="Type in a name">
+				<div class="table-responsive" style="margin-left:1%;margin-right:1%;width:96%;">
+					<table class="table" id="myTable">
 					<thead>
 						<tr>
-							<td><center><strong>Title</strong></center> </td>
-							<td><center><strong>Job Type</strong> </center></td>
-							<td><center><strong>Location</strong></center> </td>
-							<td><center><strong>Experience</strong> </center></td>
-							<td><center><strong>Apply</strong></center></td>
+							<td style="margin-left:50px;"><strong>Title</strong> </td>
+							<td><strong>Job Type</strong> </td>
+							<td><strong>Location</strong> </td>
+							<td><strong>Experience</strong> </td>
+							<td><strong>Apply</strong></td>
 						</tr>
 					</thead>
 					<tbody>
@@ -142,15 +111,14 @@
 						echo '<script type = "text/javascript">c++;</script>'
 						?>
 							<tr>
-								<td><center><a data-a="<?php echo $row['jobId'];?>" href='#editarUsuario' class='modalEditarUsuario' data-toggle='modal' title='Editar usuario'><?php echo $row['title']?></a></center></td>
-								<td><center><?php echo $row['jobtype']?></center></td>
-								<td><center><?php echo $row['location']?></center></td>
-								<td><center><?php echo $row['experience']?></center></td>
-								
 								<td>
-								<?php
-								print '<center><a href="apply_jobs.php?jobId='.$row['jobId'].'">Apply</a></center>';
-								?>
+								<?php print '<a href="viewJob.php?ID='.$row['jobId'].'">'.$row['title'].'</a>'; ?>
+								</td>
+								<td><?php echo $row['jobtype']?></td>
+								<td><?php echo $row['location']?></td>
+								<td><?php echo $row['experience']?></td>
+								<td>
+								<?php print '<a href="apply_jobs.php?jobId='.$row['jobId'].'">Apply</a>'; ?>
 								</td>
 							</tr>
 						<?php
@@ -158,16 +126,11 @@
 						?>
     				</tbody>
     			</table>
-				<center><p>Note: If you couldn't find the Job openings relevant to your job profile, don't worry! <a href="upload_resume.php">Submit your resume, Our HR will contact you.</p></center>
+				<center><p>Note: If you couldn't find the Job openings relevant to your job profile. <a href="upload_resume.php">You can submit resume as general application, Our HR team will contact you.</a></p></center>
 			</div>
 		</section>
         <!-- #servicespg Services Page Section Closed-->
-        <div id="editarUsuario" class="modal fade modal" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                </div>
-            </div>
-        </div>
+
         <section id="footer">
 			<div class="row">
 				<div class="col-sm-12">
@@ -178,14 +141,31 @@
 				</div>
 			</div>
 		</section>
-	</body>
 		<script>
-    $('.modalEditarUsuario').click(function(){
-        var ID=$(this).attr('data-a');
-        $.ajax({url:"jobmodal.php?ID="+ID,cache:false,success:function(result){
-            $(".modal-content").html(result);
-        }});
-    });
-</script>
-	
+			function myFunction() {
+				var input, filter, table, tr, td, i;
+				input = document.getElementById("myInput");
+				filter = input.value.toUpperCase();
+				table = document.getElementById("myTable");
+				tr = table.getElementsByTagName("tr");
+				for (i = 0; i < tr.length; i++) {
+					td = tr[i].getElementsByTagName("td")[0];
+					td1 = tr[i].getElementsByTagName("td")[1];
+					td2 = tr[i].getElementsByTagName("td")[2];
+					td3 = tr[i].getElementsByTagName("td")[3];
+					if ((td)||(td1)||(td2)||(td3)) {
+					if ((td.innerHTML.toUpperCase().indexOf(filter) > -1)||(td1.innerHTML.toUpperCase().indexOf(filter) > -1)||(td2.innerHTML.toUpperCase().indexOf(filter) > -1)||(td3.innerHTML.toUpperCase().indexOf(filter) > -1)) {
+						tr[i].style.display = "";
+					} else {
+						tr[i].style.display = "none";
+					}
+					}       
+				}
+			}
+		</script>
+
+
+
+
+	</body>
 </html>

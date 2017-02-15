@@ -1,4 +1,3 @@
-<?php?>
 				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         				<div class="container">
             					<div class="navbar-header page-scroll">
@@ -17,7 +16,7 @@
 				                	<li><a class="page-scroll active" style="color:blue;" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 									<li><?php include_once("includes/sicons.php");?>
 									</li>
@@ -29,7 +28,7 @@
 					</nav>
 					<!-- Modal -->
 					<div class="modal fade" id="MTSContact" role="dialog">
-						<div class="modal-dialog modal-sm">
+						<div class="modal-dialog modal-sm" style="float:right;">
 							<!-- Modal content-->
 							<div class="modal-content">
 								<div class="modal-header">
@@ -42,4 +41,3 @@
 							</div>
 						</div>
 					</div>
-<?php?>

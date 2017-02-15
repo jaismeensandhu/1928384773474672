@@ -2,7 +2,8 @@
 <?php
 session_start();
 if((isset($_SESSION['s'])==""))
-{header("location:./index.php");
+{
+	header("location:./index.php");
 }
 else
 {

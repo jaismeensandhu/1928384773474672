@@ -48,7 +48,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll active" style="color:blue;" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 							    	<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -83,50 +83,50 @@
 	    		</div>
 
 				<div class="row">
-					<div class="col-sm-6 servicespg empty" id="it_staffing">
+					<div class="col-sm-12 col-md-12 col-lg-6 servicespg empty" id="it_staffing">
 						<img src="images/servicespg/it_staffing.png" alt="it_staffing">
 					</div> 
-        			<div class="col-sm-6 servicespg">
+        			<div class="col-sm-12 col-md-12 col-lg-6 servicespg">
 	        			<center><h2>IT Staffing</h2></center>
 						<p>Mentor has a vast global recruitment network that other companies do not.  We give you a hybrid of domestic recruitment along with global reach from our offices in each region in the world where the best IT talent reside.  The end result is; your company will get the best talent and know how to implement and integrate your complex IT projects.  We have are essentially providing a 24/7 recruitment life cycle.  These service are provided to you with no risk and no upfront fees or expense.<a href="it_staffing.php"> Read More..</a></p>
         			</div>
 	    		</div>
 	
 				<div class="row"> 
-					<div id="mobile_engineering" class="col-sm-6 servicespg">
+					<div id="mobile_engineering" class="col-sm-12 col-md-12 col-lg-6 servicespg">
 						<center><h2>Mobile Engineering</h2></center>
 							<p>The Software Economy is growing at light speed and if you don’t want to be left behind you need the right company to help you implement Mobile and IOT strategies to get your company’s product and services to your customers in the most comprehensive and innovative ways possible.  Mentor can help you do this. Our SME Mobile experts can help you pick the right platforms with no allegiance to any ISV’s.   We are currenting engaged in projects that test the limits of current hardware and software available today.<a href="mobile_engineering.php"> Read More..</a></p>
 					</div>
-        			<div class="col-sm-6 servicespg empty">
+        			<div class="col-sm-12 col-md-12 col-lg-6 servicespg empty">
 						<img src="images/servicespg/mobile_engineering.png" alt="mobile_engineering">
 					</div>
 				</div>
 
 				<div class="row"> 
-        			<div id="digital_labs" class="col-sm-6 servicespg empty">
+        			<div id="digital_labs" class="col-sm-12 col-md-12 col-lg-6 servicespg empty">
 						<img src="images/servicespg/digital_labs.jpg" alt="digital_labs">
 					</div>
-        			<div class="col-sm-6 servicespg">
+        			<div class="col-sm-12 col-md-12 col-lg-6 servicespg">
             			<center><h2>Digital Labs</h2></center>
 		    			<p>Drawing on our broad experience and deep expertise, we help companies adopt a digital mindset, no matter where they sit on the digital continuum. We also help bring together the right people, with the right skills, who can help them execute that mindset through our Labs. Purpose-built to sustainably support any organization’s business goals, Labs enable measurable outcomes coupled with risk/reward sharing and a conscious alignment with the company’s existing corporate culture.<a href="digital_labs.php"> Read More..</a></p>
         			</div>
 				</div>
 
 				<div class="row"> 
-        			<div id="vms_solutions" class="col-sm-6 servicespg">
+        			<div id="vms_solutions" class="col-sm-12 col-md-12 col-lg-6 servicespg">
 		    			<center><h2>Vendor Management Solution (VMS)</h2></center>
 						<p>The Procurement of milestone, deliverable and hourly based contracts have their own set of unique needs. Whether it be separate geographical, operating and business units or statutory and regulatory demands, engaging and managing suppliers and can be a challenge. We provide Vendor Management Solution (VMS), an intuitive and flexible cloud-based platform, to help companies and organizations easily engage and manage their SOW suppliers. By streamlining, standardizing, and automating the entire source to pay process, companies and organizations increase their visibility, control, and real-world savings.<a href="vms_solutions.php"> Read More..</a></p>
         			</div>
-        			<div class="col-sm-6 servicespg empty">
+        			<div class="col-sm-12 col-md-12 col-lg-6 servicespg empty">
 						<img src="images/servicespg/vms_solutions.png" alt="vendor_management_system_msp">
 					</div>
 				</div>
 
 				<div class="row"> 
-        			<div id="managed_services" class="col-sm-6 servicespg empty">
+        			<div id="managed_services" class="col-sm-12 col-md-12 col-lg-6 servicespg empty">
 						<img src="images/servicespg/managed_services.jpg" alt="managed_services_finding_solution_together">
 					</div>
-        			<div class="col-sm-6 servicespg">
+        			<div class="col-sm-12 col-md-12 col-lg-6 servicespg">
 						<center><h2>Managed Services</h2></center>
             			<p>We realize that every client has a different set of contingent workforce goals. Mentor has built a comprehensive suite of a-la-carte solutions which allows us to help our clients better achieve those goals. In addition to providing a full Managed Service Program or MSP, Mentor provides additional services such as vendor sub-tiering, invoice consolidation and a proven VMS technology.<br>Utilizing our well- rounded expertise of the buyer, supplier and service provider community, we ensures that our clients realize their cost saving, transparency and efficiency goals.  To demonstrate our willingness to provide value to our customer we offer a free of charge contingent labour audit.<a href="managed_services.php"> Read More..</a></p>
 	    			</div>

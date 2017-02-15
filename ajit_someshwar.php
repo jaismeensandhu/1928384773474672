@@ -48,7 +48,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll active" style="color:blue;" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+									<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 							    	<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -76,16 +76,17 @@
 			<div class="subnav">
 				<center>
 					<a href="aboutus.php#WhoWeAre">Who We Are</a>
-					<a href="leadership.php">Leadership</a>
-					<a href="#">Success Stories</a>
+					<a class="current" href="leadership.php">Leadership</a>
+					<a href="clients.php">Our Clients</a>
+					<a href="success_stories.php">Success Stories</a>
 				<center>
 			</div>
 			<div id="profilepg" class="profiles">
-				<div class="col-md-4 servicespgs"><img src="images/ajit_someshwar.jpg" alt="Ajit Someshwar"></div>
-				<div class="col-md-8 servicespgs">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 leaderimg"><img src="images/ajit_someshwar.jpg" alt="Ajit Someshwar"></div>
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 leaderp">
 					<center><h2>Ajit Someshwar</h2></center>
-					<h4>Chief Executive Officer</h4></center>
-					<p style="text-align:left;">Ajit is an Indo-Canadian entrepreneur, philanthropist and social activist based in Toronto, Canada. He is President and CEO of Mentor. He has a large portfolio of investment investments in dozens of companies from Realestate to Information Technology. He is cofounder and outgoing Convenor of the Canada India Foundation public policy organization in addition is an appointee of the Government of Canada on the Board for Export Development Canada.  Prior to that he was a long standing Sr. Vice President at CIBC Insurance.</p>
+					<center><h4>Chief Executive Officer</h4></center>
+					<p style="text-align:left;">Ajit is an Indo-Canadian entrepreneur, philanthropist and social activist based in Toronto, Canada. He is President and CEO of Mentor. He has a large portfolio of investments in dozens of companies from Realestate to Information Technology. He is cofounder and outgoing Convenor of the Canada India Foundation public policy organization in addition is an appointee of the Government of Canada on the Board for Export Development Canada.  Prior to that he was a long standing Sr. Vice President at CIBC Insurance.</p>
 					<p style="text-align:left;">As co-founder of Mentor with Michael Groff they had a joint vision of creating a Staffing Firm that thinks outside the box and innovates on delivery methodologies.  He strongly felt that the staffing industry was mired in the past and not modernizing their approach at the same rate as other IT Service Companies. This is why he was the sole investor in Mentor and continues to be actively involved in its corporate strategies and finances.
 					</p>
 				</div>

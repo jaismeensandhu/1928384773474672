@@ -49,7 +49,7 @@
                     --><li><a class="page-scroll" href="index.php">Home</a></li>
 	    				  <li><a style="color:blue;" href="aboutus.php">About Us</a></li>
 		    			  <li><a href="services.php">Services</a></li>
-			    		  <li><a href="clients.php">Our Clients</a></li>
+			    		  <li><a href="careers.php">Careers</a></li>
 				    	  <li><a href="contactus.php">Locations</a></li>
 				    	  <li><?php include_once("includes/sicons.php"); ?><!-- /.socialicons --></li>
                 </ul>
@@ -79,10 +79,11 @@
 					<center>
 	                   <a href="aboutus.php" class="current">Who We Are</a>
 					   <a href="leadership.php">Leadership</a>
-					   <a href="#">Success Stories</a>
+					   <a href="clients.php">Our Clients</a>
+					   <a href="success_stories.php">Success Stories</a>
 					</center>
 	        </div>
-			<section id="aboutuspg" class="servicespgs">
+			<section id="aboutuspg" class="aboutuspgs">
 			<div id="WhoWeAre" class="row">
 				<div class="col-sm-1"></div>
 				<div class="col-sm-10">

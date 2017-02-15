@@ -1,7 +1,9 @@
 <?php
 $mysql_hostname = "localhost";
-$mysql_user ="root";
-$mysql_password ="root";
+//$mysql_user ="root";
+$mysql_user ="mentordbadmin";
+//$mysql_password ="root";
+$mysql_password ="Mentor2016";
 $mysql_database ="mentortechsource";
 
 $bd = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_database) or die("oops !Could not connect database");

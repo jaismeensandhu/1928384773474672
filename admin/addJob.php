@@ -2,16 +2,32 @@
 <?php
 session_start();
 if((isset($_SESSION['s'])==""))
-{header("location:./index.php");
+{
+    header("location:./index.php");
 }
 else
 {
+    include_once("dbconnection.php");
+    $sname = $_SESSION['s'];
+	$res = mysqli_fetch_array(mysqli_query($bd,"SELECT permission FROM login WHERE user_name='$sname'"));
+	$permission = array_values($res)[0];
+	if(($permission != 'admin') && ($permission != 'su')) 
+	{  
+        header("location:./home.php");
+    }
+    else
+    {
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<?php
-			include("includes/head.inc.php");
-		?>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mentor Add Jobs</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
 	</head>
 	<body>
 		<div id="header-wrapper">
@@ -41,7 +57,14 @@ else
                 </p>
                 <p>
                     <label>Job Type *</label>
-                    <input name="type" id="type" type="text"/>
+                    <select name="type" id="type">
+                        <option value="Fulltime/Contract">Fulltime/Contract</option>
+                        <option value="Contract">Contract</option>
+                        <option value="Fulltime">Fulltime</option>
+                        <option value="Contract to Hire">Contract to Hire</option>
+                        <option value="Parttime">Parttime</option>
+                        <option value="Any">Any</option>
+                    </select>
                 </p>
                 <p>
                     <label>Location</label>
@@ -51,22 +74,28 @@ else
                     <label>Experience</label>
                     <input name="experience" id="experience" type="text"/>
                 </p>
-                
             </fieldset>
+             <script type="text/javascript" src="./nicEdit.js"></script>
+             <script type="text/javascript">
+	             bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+            </script>
             <fieldset class="row1">
                 <legend>Job Details</legend>
             <center>    <p>
                     <label>Job Description *</label>
-                    <textarea name="description" id="description"></textarea>
+                    <textarea name="description" id="description" style="width: 400px; height: 100px;max-width:100vw"></textarea>
                 </p>
                 <p>
                     <label>Basic Qualitfications</label>
-                    <textarea name="qualification" id="qualification"></textarea>
+                    <textarea name="qualification" id="qualification" style="width: 400px; height: 100px;max-width:100vw"></textarea>
                 </p>
                 <p>
                     <label>Professional Skill Requirements</label>
-                    <textarea name="skills" id="skills"></textarea>
+                    <textarea name="skills" id="skills" style="width: 400px; height: 100px;max-width:100vw"></textarea>
                 </p>
+                </fieldset>
+            <fieldset class="row1">
+                <legend>Additional Details</legend>
                 <p>
                     <label>Positions</label>
                     <input name="positions" id="positions" type="text"/>
@@ -75,16 +104,9 @@ else
                     <label>Salary</label>
                     <input name="salary" id="salary" type="text"/>
                 </p>
-                <p>
-                    <label>Starting Date</label>
-                    <input name="startDate" id="startDate" type="date"/>
-                </p>
-                <p>
-                    <label>Ending Date</label>
-                    <input name="endDate" id="endDate" type="date"/>
-                </p></center>
+                </center>
             </fieldset>
-            <div class="col-sm-12"><button name="submit" id="submit" class="button">Post Job &raquo;</button></div></form>		
+            <div class="col-sm-12"><center><button name="submit" id="submit" class="button">Post Job &raquo;</button></center></div></form>		
         </div><!-- end #Wrapper -->
 		<div id="footer">
 			<?php
@@ -93,4 +115,4 @@ else
 		</div><!-- end #footer -->
     </body>
 </html>
-<?php } ?>
+<?php } }?>

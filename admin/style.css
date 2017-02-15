@@ -112,26 +112,72 @@ form.register input{
     color: #000;
     float: left;
     margin-right: 5px;
-	width: 40%;
+	width: 400px;
+	max-width: 100vw;
+}
+#utable table,#utable th,#utable td {
+   border: 2px solid gray;
+   margin: 5px;
+   padding: 2px;
+}
+#utable th, #utable td {
+	padding:5px 10px 5px 10px;
+	height: 100%;	
+    text-align: left;
+}
+#rbtn div input{
+	padding: 0;
+	width:30px;
+	margin:0;
+}
+#utable input,#utable button{
+	width: 100%;
+	height: 100%;	
+}
+#utable button{
+	padding: 2px;
 }
 form.register textarea{
 	width:140px;
     color: #000;
     float: left;
     margin-right: 5px;
-	width: 40%;
+	width: 400px;
+	max-width: 100vw;
+	
+}
+
+form.register textarea
+{
+    border: 1px solid #000;
+	height: 60px;
+}
+
+form.register select{
+	width:140px;
+    color: #000;
+    float: left;
+    margin-right: 5px;
+	width: 400px;
+	max-width: 100vw;
 }
 
 form.register input
 {
     border: 1px solid #000;
     height: 25px;
+	margin-left:35px;
+	
 }
-form.register textarea
-{
-    border: 1px solid #000;
-	height: 60px;
+
+
+form.register select{
+
+	border: 1px solid #000;
+    height: 25px;
+	margin-left:35px;
 }
+
 .button
 {
     background: #842946 url(../img/overlay.png) repeat-x;

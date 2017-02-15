@@ -46,9 +46,9 @@
                 					<ul class="nav navbar-nav">
 					                	<!-- Hidden li included to remove active class from about link when scrolled up past about section
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
-				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
+				    				<li><a class="page-scroll active"  style="color:blue;" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll active"  style="color:blue;" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 									<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -70,8 +70,10 @@
 	
 		<section id="servicespg">
         		<div class="subnav"><center>
-	        		<a class="current" href="clients.php#our_clients">Our Clients</a>
-				<a href="clients.php#clients_opinions">Cutomer Success Stories</a></center>
+	        		<a href="aboutus.php">Who We Are</a>
+					<a href="leadership.php">Leadership</a>
+					<a href="clients.php" class="current">Our Clients</a>
+					<a href="success_stories.php">Success Stories</a></center>
 	    		</div> <!-- /.subnav -->
 		
 				<div>

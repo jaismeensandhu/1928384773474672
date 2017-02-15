@@ -1,7 +1,8 @@
 
 	    		<div>
-<center><table class = "table">
-                    <?php
+<center>
+	<table class="table">
+<?php
     include_once("dbconnection.php");
      //if (isset($_GET['applicationId'])){ 
     $appId = $_GET['applicationId'];
@@ -39,14 +40,20 @@
         <td><?php echo $row['expectedSalary']?></td>
     </tr>
     <tr>   
+        <td><strong>Submitted On</strong></td>
+        <td><?php echo date("F j, Y ", strtotime($row['submissionDate']))?></td>
+    </tr>
+    <tr>   
         <td><strong>Cover Letter</strong></td>
         <td><?php echo  nl2br($row['coverLetter'])?></td>
     </tr>
+    
     <tr>   
         <td><strong>Resume</strong></td>
         <td><a href="download.php?link=<?php echo $row['resume'];?>" target="_blank"><?php echo $row['resume']?></a></td>
     </tr>
     </tbody>
     </table></center>
-    		</div>
+</div>
 
+    

@@ -48,7 +48,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll active" style="color:blue;" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 							    	<li><?php include_once("includes/sicons.php"); ?></li>
 								</ul>
@@ -83,7 +83,7 @@
 				<p>Mentor Tech Source has a unique hybrid contingent staffing service composed of domestic and international sourcing.  We are not only a top performing firm in finding Subject Matter Experts for our clients very challenging and complex projects, but we are also experts in Canadian Immigration Law which allows us to obtain work permits for international resources to work legally in Canada.</p><p>We have a 24/7 recruitment cycle due to the fact that Mentor has office in many different time zones that are working on your urgent job vacancies day and night. Our recruiters are located in all geos that have excellent IT talent including Canada, USA, Mexico, Argentina, UK, India, China and Australia.</p>
         		</div>
 				<div class="col-md-6 servicespgs"><img src="images/servicespg/it_staffing.png" alt="it_staffing"></div>
-				<div class="col-md-12 servicespgs">
+				<div class="col-md-12 servicespgs" style="height:auto;">
 					<p>We live in a global village whereby Mentor will give your firm access to the best and brightest no matter where they may live.  Mentor also has unique technical recruitment process that has been developed over the past 10 years and proven to be highly effectively to ensure before you see a resume they have gone through multiple levels of screening.</p><p>In other words we do not just search the job websites and fling the resume at the client without any due process which many of our competitors do.   We have an extensive technical screening panel covering a wide variety of Technology Stacks and Applications Software Products.  Mentor also uses the latest testing software products that requires a programmer to write code and that code gets analyzed on multiple levels. Mentor also is also developing a Video Based Screening product that will share such screenings after completion with the client via email prior to deciding if they would like to interview the candidate themselves.</p><p> This has all been put in place to produce a comprehensive system that will ensure the highest quality and project fit for any candidate submitted by Mentor.   We know that your staff’s time is at a premium and we are always look for ways to reduce the time your staff spends on interviewing candidates that were never a fit to begin with.</p>
         		</div>
 		</section>

@@ -53,7 +53,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll active" style="color:blue;" href="contactus.php">Locations</a></li>
 							    	<li><?php include_once("includes/sicons.php"); ?></li>
                 					</ul>
@@ -64,10 +64,10 @@
     				</nav>
 					<!-- Modal Starts -->
 					<?php include_once("includes/modal.php"); ?>
-		            	<div class="video-container">
-		               		<img src="images/banner/contactus_banner.png" alt="mentor_tech_source_contactus">
-			        </div>
-                    		<div class="text">
+				<div class="video-container">
+					<img src="images/banner/contactus_banner.png" alt="mentor_tech_source_contactus">
+				</div>
+				<div class="text contactpgt">
 					<h2>We can provide your company Services no matter</h2><h1>WHERE YOU ARE</h1>
 				</div>
 			</div>

@@ -48,7 +48,7 @@
 					                	--><li><a class="page-scroll" href="index.php">Home</a></li>
 				    				<li><a class="page-scroll active" style="color:blue;" href="aboutus.php">About Us</a></li>
 					    			<li><a class="page-scroll" href="services.php">Services</a></li>
-						    		<li><a class="page-scroll" href="clients.php">Our Clients</a></li>
+						    		<li><a class="page-scroll" href="careers.php">Careers</a></li>
 							    	<li><a class="page-scroll" href="contactus.php">Locations</a></li>
 							    	<li>
 										<?php include_once("includes/sicons.php"); ?>
@@ -79,15 +79,16 @@
         <div class="subnav">
 			<center>
 				<a href="aboutus.php#WhoWeAre">Who We Are</a>
-				<a href="leadership.php">Leadership</a>
-				<a href="#">Success Stories</a>
+				<a class="current" href="leadership.php">Leadership</a>
+				<a href="clients.php">Our Clients</a>
+				<a href="success_stories.php">Success Stories</a>
 			<center>
 	    </div>
 		<div id="profilepg" class="profiles">
-			<div class="col-md-4 servicespgs" style="height:350px;"><img src="images/mahesh_chandrasekar.jpg" alt="Mahesh Chandrasekar"></div>
-			<div class="col-md-8 servicespgs" style="height:350px;">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 leaderimg"><img src="images/mahesh_chandrasekar.jpg" alt="Mahesh Chandrasekar"></div>
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 leaderp">
 				<center><h2>Mahesh Chandrasekar</h2></center>
-				<h4>Head of Global Recruitment</h4></center>
+				<center><h4>Head of Global Recruitment</h4></center>
 				<p style="text-align:left;">Mahesh Chandrasekar is the Head of Global Recruitment at Mentortech. He brings over 17 years of experience in the field of Talent Acquisition. Mahesh also frequently interfaces with the customers to understand their resource needs and have them addressed by the teams he manages out of our US, Canada and India offices. His experience across HR, Legal and Immigration helps ensure compliance with all local & federal regulations. Mahesh lives in Dallas with his wife and two kids.
 				</p>
 			</div>

@@ -6,12 +6,14 @@ $( document ).ready(function() {
     initBannerVideoSize('.video-container .poster img');
     initBannerVideoSize('.video-container .filter');
     initBannerVideoSize('.video-container video');
+    initBannerVideoSize('.video-container .fillWidth img');
 
     $(window).on('resize', function() {
         scaleVideoContainer();
         scaleBannerVideoSize('.video-container .poster img');
         scaleBannerVideoSize('.video-container .filter');
         scaleBannerVideoSize('.video-container video');
+        scaleBannerVideoSize('.video-container .fillWidth img');
     });
 
 });
@@ -58,6 +60,7 @@ function scaleBannerVideoSize(element){
         }
 
         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+        //$('.homepage-hero-module .video-container img').addClass('fadeIn animated');
 
     });
 }
